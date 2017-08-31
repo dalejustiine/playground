@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import axios from 'axios';
 
 class FetchTest extends React.Component {
@@ -17,27 +17,31 @@ class FetchTest extends React.Component {
     //     const posts = res.data.data.children.map(obj => obj.data);
     //     this.setState({ posts });
     //   });
+
+    var querystring = require('querystring');
+    const appcred = {
+      email: 'admin@admin.com',
+      password: 'password'
+    };
+
     axios({
       method: 'post',
       url: 'http://localhost:1234/api/authenticate',
-      transformResponse: [function (data) {
-        console.log(data);
-      }],
       headers: {
-        'Accept': 'application/prs.appname.v1+json',
-        'Content-Type': 'application/x-www-form-urlencoded'
+        'Accept': 'application/prs.appname.v1+json'
       },
-      data: {
-        email: 'admin@admin.com',
-        password: 'password'
-      }
+      // transformRequest: [(data) => JSON.stringify(data.data)]
+    }, querystring.stringify(appcred)).then(res => {
+      console.log(res);
+    }).catch(err => {
+      console.log(err);
     });
   }
 
   render() {
     return (
       <div>
-        <h1>{`/r/${this.props.subreddit}`}</h1>
+        <h1>{'/r/'}</h1>
 
       </div>
     );
