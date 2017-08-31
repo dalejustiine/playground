@@ -1,0 +1,37 @@
+{
+  "name": "modern-business",
+  "version": "1.0.0",
+  "description": "scss-ing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dalejustiine/scss-ing.git"
+  },
+  "keywords": [
+    "scss"
+  ],
+  "author": "dale",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dalejustiine/scss-ing/issues"
+  },
+  "homepage": "https://github.com/dalejustiine/scss-ing#readme",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-jshint": "^2.0.4",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "gulp-wrapper": "^1.0.0",
+    "jshint": "^2.9.4"
+  }
+}

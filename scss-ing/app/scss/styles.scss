@@ -1,0 +1,186 @@
+$green: #275F24;
+$green-hover: #459945;
+$gold: #FDCD1D;
+$red: #D92B2A;
+
+$white: #FFFFFF;
+$white-border: #E2E2E6;
+
+$grey: #FAFAFC;
+
+.panel {
+    .noborder {
+        border: none;
+        box-shadow: none;
+    }
+}
+
+a {
+    color: $green;
+
+    &:link {
+        text-decoration: none;
+    }
+
+    &:active, &:hover, &:focus {
+        color: $green-hover;
+    }
+}
+
+body {
+    .main-container {
+        padding: 1px 0 0 0;
+        border: solid 1px $white-border;
+        border-top: none;
+        border-bottom: none;
+        background-color: $white;
+    }
+
+    .container {
+        border: solid 1px $white-border;
+        border-top: none;
+        border-bottom: none;
+        background-color: $white;
+    }
+
+    background-color: $grey;
+}
+
+.news-item {
+    hr {
+        margin: 10px 0 10px 0;
+    }
+}
+
+.news-item-title, .article-item-title {
+    font-weight: 600;
+}
+
+.news-item-content {
+    font-size: 13px;
+}
+
+.article-item {
+    margin-bottom: 10px;
+}
+
+.navbar {
+    background-color: $green;
+    border-bottom: 3px solid $gold;
+
+    .main-menu {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .container {
+        background-color: $green;
+        border-color: $green;
+    }
+
+    .navbar-brand {
+        color: $gold;
+
+        &:focus, &:hover {
+            color: $green-hover;
+            background-color:transparent;
+        }
+
+        img {
+            height: 100%;
+            width: auto;
+        }        
+    }
+}
+
+.navbar-default, .navbar-inverse{
+    .navbar-nav{
+        li{
+            a {
+                color: $gold;
+
+                &:focus, &:hover, &:active{
+                    color: $green-hover;
+                    background-color:transparent;
+                }
+            }
+        }
+
+        .open{
+            a {
+                &:hover, &:focus{
+                    color: $green-hover;
+                    background-color:transparent;
+                }
+            }
+        }
+    }
+}
+
+.navbar-default {
+    .navbar-brand {
+        color: $gold;
+
+        &:focus, &:hover {
+            color: $green-hover;
+            background-color:transparent;
+        }
+
+        img {
+            height: 100%;
+            width: auto;
+        }        
+    }
+
+    .navbar-nav {
+        li {
+            a {
+                color: $gold;
+                font-weight: 600;
+
+                &:focus, &:hover {
+                    color: $green-hover;
+                    background-color: $green;
+                }
+            }
+
+        }
+    }
+}
+
+.navbar-static-bottom {
+    background-color: $green;
+    border-top: 3px solid $gold;
+
+    .copyright {
+        color: $gold;
+    }
+
+    .container {
+        background-color: $green;
+        border-color: $green;
+    }
+}
+
+.news-widgets {
+    padding-left: 20px;
+}
+
+.contaier, .content {
+    padding: 0 25px 0 25px;
+}
+
+.btn-search {
+    background-color: $green;
+    border-color: $green;
+
+    &:hover, &:active, &:focus {
+        background-color: $green-hover;
+        border-color: $green-hover;
+    }
+
+    fa {
+        background-color: $green;
+        border-color: $green;
+    }
+}
